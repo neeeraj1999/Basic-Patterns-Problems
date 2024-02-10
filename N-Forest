@@ -1,0 +1,35 @@
+Sam is making a forest visualizer. An N-dimensional forest is represented by the pattern of size NxN filled with ‘*’.
+For every value of ‘N’, help sam to print the corresponding N-dimensional forest.
+Example:
+Input: ‘N’ = 3
+
+Output: 
+* * *
+* * *
+* * *
+Detailed explanation ( Input/output format, Notes, Images )
+Constraints :
+1  <= N <= 25
+Time Limit: 1 sec
+
+
+
+## Solution in Python
+
+def nForest(n:int) ->None:
+    # Write your solution here.
+    for i in range(1,n+1):
+        print("* "*n)
+
+## Solution in cpp
+
+void nForest(int n) {
+	// Write your code here.
+	int i,j;
+	for (i = 0; i < n; i++) {
+          for (j = 0; j < n; j++) {
+            cout << "* ";
+          }
+		cout<<"\n" ;
+        }
+}
